@@ -1,0 +1,146 @@
+@keyframes move {
+    0% {
+        top:-7vw;
+    }
+
+    100% {
+        top:-5vw;
+    }
+}
+
+@keyframes move-2 {
+    0% {
+        margin-left:-7vw;
+    }
+    100% {
+        margin-left:60vw;
+    }
+}
+
+
+body {
+    background-color: #000000;
+    color:#ffffff;
+    padding:0 3vw 0 3vw;
+
+    font-family: 'Vollkorn', serif;
+    font-size:16px;
+    font-weight:400;
+}
+
+header div.circle {
+    margin-top: -4vw;
+    margin-left:-7vw;
+
+    width: 20vw;
+    height: 20vw; 
+    border: none; 
+    border-radius: 100%;
+    box-shadow: inset 0px 0px 5vw #81d3ed;
+
+    animation: move-2 alternate 8s infinite cubic-bezier(0.65,0.05,0.36,1);
+}
+
+header div.big {
+    position:fixed;
+    top:-7vw;
+    right:9vw;
+    width: 40vw;
+    height:40vw;
+
+    animation: move alternate 2s infinite cubic-bezier(0.65,0.05,0.36,1);
+}
+
+header h1 {
+    z-index:5;
+    margin-top:-12vw;
+    color: red;
+    font-size: 6vw;
+    text-transform: uppercase;  
+    font-weight:700;
+    mix-blend-mode:overlay;
+}
+
+
+main section {
+    padding:10px 0 10px 0;
+    border-bottom: solid 1px #81d4ed5e;
+}
+
+main section:last-child {
+    border-bottom:none;
+}
+
+main h2 {
+    margin-bottom:0;
+}
+
+
+main p {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight:300;
+    line-height:1.2;
+    margin-bottom:0.7em;
+    margin-top:0.7em;
+    
+}
+
+main p span {
+    font-family: 'Vollkorn', serif;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:0.1em ;
+}
+
+main p span.peter {
+    color:red;
+}
+
+main p span.dana {
+    color:#f3b952;
+}
+
+main p span.mayor {
+    color: #81d3ed;
+}
+
+main p span.ray {
+    color: #ff7752;
+}
+
+main p span.egon {
+    color: #ec5b7c;
+}
+
+main p span.winston {
+    color:  #cc5cad; 
+}
+
+
+@media (max-width:700px) {
+    header h1 {
+        font-size:8vw;
+        margin-top:-19vw;
+    }
+
+    header div.circle {
+        width:35vw ;
+        height:35vw;
+        margin-top:-12vw;
+        margin-left:-10vw;
+    }
+
+    header div.big {
+        width:50vw;
+        height:50vw;
+        right:3vw;
+    }
+
+    main h2 {
+        font-size:20px;
+    }
+
+    main p {
+        font-size:14px;
+    }
+}
