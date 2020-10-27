@@ -1,0 +1,125 @@
+body {
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+header {
+    background-image: url(https://images.unsplash.com/photo-1585883457648-50e28db6aa86?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=930&q=80);
+    background-position: 0% 45%;
+    background-size: cover;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 158px;
+    color: rgba(230,90,54,0.9);
+}
+
+header h1 {
+    font-size: 80px;
+    margin-bottom: 0px;
+   
+}
+
+header h2 {
+    margin-top:-4px;
+    font-size: 30px;
+}
+
+.column-container {
+    width: 960px;
+    margin: auto;
+}
+
+h3 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 34px;
+}
+
+p {
+    font-size: 17.8px;
+    line-height: 1.42;
+}
+
+img.image-one {
+    width:400px;
+    height: 300px;
+    object-fit: cover;
+    float: right;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+section {
+    padding-top: 2px;
+    padding-bottom: 30px;
+}
+
+section.first {
+    background-color: rgb(27, 29, 39);
+    color: #d5cec8;
+    
+}
+
+ul.photo-grid {
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color:  rgb(27, 29, 39); 
+}
+
+ul.photo-grid img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+   
+}
+
+ul.photo-grid li {
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 24px;
+}
+
+
+ul.photo-grid li div {
+    margin-left: 12px;
+    width:50%;
+}
+
+ul.photo-grid li div h4 {
+    margin-top:-2px;
+    margin-bottom: 7px;
+    font-size: 20px;
+}
+
+ul.photo-grid li div p {
+    margin-top:4px;
+    font-size: 18px;
+}
+
+section.second {
+    background-color: #d5cec8;
+    padding-bottom: 20px;
+}
+
+section.third {
+    background-color: rgba(27, 29, 39, 1);
+    color: #d5cec8;
+}
+
+section.third p {
+    font-size: 25px;
+    text-align: center;
+    padding: 0 130px;
+    padding-bottom: 50px;
+}
+
+footer {
+    background-color: #d5cec8;
+    color: rgba(27, 29, 39, 1);
+    padding-top: 21px;
+    padding-bottom: 20px;
+}
+
+
