@@ -1,0 +1,860 @@
+
+
+body {
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+main {
+    margin: 40px;
+}
+
+h1 {
+     font-size: 30px;
+     margin-bottom: 40px;
+}
+
+.button_container {
+    border: 1px solid #ddd;
+    margin: 0 10px 10px 0;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    float: left;
+    overflow: hidden;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+
+a#btn_spotify {
+    display: inline-block;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    margin: auto;
+    padding: 10px 40px 0 40px;
+    background-color: #2ebd59;
+    border: 2px solid #2ebd59;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+a#btn_spotify:hover {
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+}
+
+
+
+a#btn_twitter {
+    display: inline-block;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: auto;
+    padding: 10px 30px 0 30px;
+    background-color: #56cdf1;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a#btn_twitter:hover {
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2ebfec+0,28a5cb+100 */
+    background: rgb(46,191,236); /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  rgba(46,191,236,1) 0%, rgba(40,165,203,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  rgba(46,191,236,1) 0%,rgba(40,165,203,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  rgba(46,191,236,1) 0%,rgba(40,165,203,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ebfec', endColorstr='#28a5cb',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+a#btn_indiegogo {
+    display: inline-block;
+    position: relative;
+    margin:auto;
+    padding: 8px 16px;
+    background-color: #fff;
+    color: #eb1478;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: -2px;
+    transition: all .2s;
+}
+
+a#btn_indiegogo:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #eb1478;
+    transition: all .5s;
+}
+
+a#btn_indiegogo:hover {
+    color: #fff;
+}
+
+a#btn_indiegogo:hover:before {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+a#btn_indiegogo span {
+    position: relative;
+    z-index: 10;
+}
+
+
+div a {
+    position: relative;
+}
+
+a {
+    position: absolute;
+    display:block;
+    top:50%;
+    transform: translate(0, -50%)
+}
+a#btn_missouribotanical {
+    display: inline-block;
+    margin:auto;
+    text-decoration: none;
+   
+}
+
+a#btn_missouribotanical span {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: block;
+    font-size: 20px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    letter-spacing: 0.02rem;
+    
+    color: #d1830d;
+
+    transition: color 0.5s cubic-bezier(0.65,0.05,0.36,1), transform 0.6s cubic-bezier(0.65,0.05,0.36,1) ;
+  
+}
+
+a#btn_missouribotanical div {
+    width: 2px;
+    height: 50px;
+    background-color: #d1830d;
+    position:absolute;
+    left: 50%;
+    bottom: 60%;
+    transform: translate(-50%, 0%);
+
+    opacity: 0;
+
+    transition: all 0.5s 0.1s cubic-bezier(0.65,0.05,0.36,1);
+}
+
+a#btn_missouribotanical:hover span {
+    color: #295307;
+    transform: translateY(25%);
+
+}
+
+
+a#btn_missouribotanical:hover div {
+    background-color: #295307;
+    opacity: 1;
+    transform: translateY(-40%);
+}
+
+a#btn_tesla img{
+    width: 120px;
+    height: 120px;
+    transition: transform 0.7s 0.1s cubic-bezier(0.65,0.05,0.36,1);
+}
+
+a#btn_tesla {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    transform: translate(50%, -50%);
+}
+
+a#btn_tesla div.circle-tesla {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left:50%;
+    transform: translate(-42%, -260%);
+    z-index: -1;
+    border-radius: 100%;
+    box-shadow:   0px 0px 8px 0px rgba(176, 50, 50, 0.75);
+
+    opacity: 0;
+
+    transition: all 0.6s 0.1s cubic-bezier(0.65,0.05,0.36,1);
+}
+
+a#btn_tesla:hover div.circle-tesla {
+    opacity:1;
+    transform: translate(-42%, -350%) scale(9);
+}
+
+a#btn_tesla:hover img {
+    transform: translate(0) scale(0.9);
+}
+
+a#btn_moo {
+    transform: translateY(-50%);
+    
+}
+
+a#btn_moo img {
+    width: 140px;
+    height: auto;
+    position: relative;
+
+    transition: transform 0.5s cubic-bezier(0.65,0.05,0.36,1);
+}
+
+a#btn_moo div.moo-underline {
+    width: 60%;
+    height: 3px;
+    position: absolute;
+    left: 50%;
+    bottom: -24%;
+    border-radius: 100px;
+    transform: translate(-50%, 10%);
+    background-color: #3b8a60;
+
+    opacity: 0;
+    transition: opacity 0.6s cubic-bezier(0.65,0.05,0.36,1);
+}
+
+a#btn_moo div.two {
+    top:-26%;
+}
+
+a#btn_moo:hover div.moo-underline {
+    opacity: 1;
+}
+
+a#btn_moo:hover img {
+    transform: scale(0.85);
+}
+
+a#btn_hsn {
+    text-decoration:none;
+    color: #24518b;
+    position: relative;
+
+    transition: all 0.3s;
+}
+
+a#btn_hsn div.circle-hsn {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    background: linear-gradient(217deg, #24518b57, #ffffff);
+    z-index: -1;
+    transition: transform 0.5s ;
+
+}
+
+a#btn_hsn:hover div.circle-hsn {
+    background: linear-gradient(400deg, #24518b, #6fa1e4);
+}
+
+a#btn_hsn:hover  {
+    color: #fff;
+}
+
+a#btn_hsn:hover div.circle-hsn {
+    transform: translate(-50%, -50%) scale(0.92);
+}
+
+a#btn_hsn span {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+a#btn_tkallen {
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    font-size: 36px;
+    text-decoration: none;
+    margin-left: 19px;
+    color: #133857;
+    position:relative;
+}
+
+a#btn_tkallen span {
+    display: block;
+    text-align: left;
+
+    transition: all 0.4s 0.2s cubic-bezier(0.65,0.05,0.36,1);
+}
+
+a#btn_tkallen span.caption {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #13385786;
+
+    transition: all 0.4s cubic-bezier(0.65,0.05,0.36,1);
+}
+
+div.rect-ta {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-53.5%, -50%);
+    width: 240px;
+    height:80px;
+    border: 2px solid #13385786;
+
+    transition: all 0.4s cubic-bezier(0.65,0.05,0.36,1);
+
+}
+
+a#btn_tkallen:hover div.rect-ta {
+    border-color: #e7cc32;
+}
+
+a#btn_tkallen:hover span.caption {
+    color: #d17a32;
+}
+
+a#btn_tkallen:hover span {
+    transform: scale(0.95);
+}
+
+a#btn_electra {
+    text-decoration: none;
+    color: rgb(53, 53, 53);
+    position: relative;
+}
+
+a#btn_electra span {
+    display: block;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 34px;
+    letter-spacing: 0.1rem;
+
+    transition: all 0.6s cubic-bezier(0.65,0.05,0.36,1);
+}
+
+a#btn_electra div {
+    position: absolute;
+}
+
+a#btn_electra div.circle-electra {
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    background-color: #eb1426d5;
+    top:0;
+    left:10%;
+}
+
+a#btn_electra div.wheel-2 {
+    background-color: rgba(86, 206, 243, 0.7);
+    left: 76%;
+    top:50%;
+}
+
+a#btn_electra div.bike {
+    width: 40px;
+    height: 2px;
+    background-color: rgba(245, 207, 39, 0.9);
+    top:-20%;
+    right: 10%;
+    transform: rotate(deg);
+}
+
+a#btn_electra div.handle {
+    width: 20px;
+    height: 2px;
+    background-color: rgba(245, 207, 39, 0.9);
+    top: 110%;
+    right: 40%;
+    transform: rotate(140deg);
+}
+
+a#btn_electra div.wheel-1, a#btn_electra div.wheel-2, a#btn_electra div.bike, a#btn_electra div.handle {
+    transition: all 0.6s 0.2s cubic-bezier(0.65,0.05,0.36,1);
+}
+
+a#btn_electra:hover div.wheel-1 {
+    transform:translate(300%, 210%);
+}
+
+a#btn_electra:hover div.wheel-2 {
+    transform:translate(-340%, 55%);
+}
+
+a#btn_electra:hover div.bike {
+    transform: translate(-236%, 2300%) rotate(-36deg);
+}
+
+a#btn_electra:hover div.handle {
+    transform: translate(-80%, -1000%) rotate(-130deg);
+}
+
+a#btn_electra:hover span {
+    transform: translateX(-5%);
+}
+
+a#btn_potter {
+    position: relative;
+}
+
+a#btn_potter img{
+    width: 150px;
+    height: auto;
+}
+
+a#btn_potter div.circle-potter {
+    position: absolute;
+    width: 134px;
+    height: 134px;
+    background: linear-gradient(to bottom, rgba(249,214,12,1) 0%,rgba(255,255,255,0) 100%);
+    top:50%;
+    left:50%;
+    transform: translate(-49%, -50%) rotate(180deg);
+
+    border-radius: 100%;
+    z-index: -1;
+
+    transition: transform 0.6s cubic-bezier(0.65,0.05,0.36,1);
+}
+
+a#btn_potter:hover div.circle-potter {
+    transform: translate(-49%, -50%) rotate(0) scale(0.76);
+}
+
+a#btn_sardella {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 36px;
+    color: #0840bb;
+    text-decoration: none;
+
+    position: relative;
+}
+
+a#btn_sardella div.tile-sardella {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #56f1f1;
+    z-index: -1;
+    transition: transform 0.5s 0.1s cubic-bezier(0.65,0.05,0.36,1);
+}
+
+a#btn_sardella span {
+    display: block;
+
+    transition: transform 0.6s cubic-bezier(0.65,0.05,0.36,1);
+}
+
+a#btn_sardella:hover span {
+    transform: scale(0.9);
+}
+
+a#btn_sardella:hover div.tile-sardella {
+    transform: translate(-50%, -50%) scale(1.35) rotate(45deg);
+}
+
+a#btn_ideo {
+    position: relative;
+}
+
+a#btn_ideo img {
+    width: 130px;
+    height: auto;
+
+    transition: transform 0.6s cubic-bezier(0.65,0.05,0.36,1);
+}
+
+a#btn_ideo div.circle-ideo {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(#f0701ab9, #42d6d696);
+    border-radius: 100%;
+    z-index:-2;
+
+    transition: transform 0.6s cubic-bezier(0.65,0.05,0.36,1);
+}
+
+a#btn_ideo div.circle-ideo div.inner {
+    position: absolute; 
+    background: #fff;
+    width: 70px;
+    height: 70px;
+    z-index: -1;
+}
+
+a#btn_ideo:hover img {
+    transform: scale(0.85);
+}
+
+a#btn_ideo:hover div.circle-ideo {
+    transform: translate(-50%, -50%) scale(1.36);
+}
+
+a#btn_yorker {
+    position: relative;
+}
+
+a#btn_yorker img{
+    width: 190px;
+    height: auto;
+}
+
+a#btn_yorker div.underline-news {
+    background-color: #000000;
+    position:absolute;
+    left:50%;
+    transform: translate(-50%, 200%);
+    width:200px;
+    height:3.5px;
+    clip-path: polygon(0 0, 0 100%, 0 100%, 0 0 );
+
+    transition: clip-path 0.5s cubic-bezier(0.65,0.05,0.36,1);
+}
+
+a#btn_yorker:hover div.underline-news {
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0 );
+}
+
+a#btn_samsung {
+    position:relative;
+}
+
+a#btn_samsung img{
+    width: 180px;
+    height: auto;
+
+    transition: transform 0.3s cubic-bezier(0.65,0.05,0.36,1);
+}
+
+a#btn_samsung div.circle-samsung {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 210px;
+    height: 70px;
+    border-radius: 50px;
+    opacity: 0;
+    box-shadow: 0px 0px 18px 0px rgba(13, 29, 121, 0.75);
+
+    transition: opacity 0.2s 0.1s cubic-bezier(0.65,0.05,0.36,1);
+}
+
+a#btn_samsung:hover div.circle-samsung {
+    opacity: 1;
+}
+
+a#btn_samsung:hover img {
+    transform: scale(0.95);
+}
+
+a#btn_cola {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #111111;
+}
+
+a#btn_cola span {
+    display:block;
+    transition: all 0.5s cubic-bezier(0.65,0.05,0.36,1);
+}
+
+a#btn_cola div.circle-cola {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: rgb(231, 16, 16);
+    z-index: -1;
+    opacity: 0;
+
+    transition: opacity 0.5s cubic-bezier(0.65,0.05,0.36,1);
+}
+
+a#btn_cola:hover span {
+    color: #ffffff;
+    transform: scale(0.8);
+}
+
+a#btn_cola:hover div.circle-cola {
+    opacity: 1;
+}
+
+a#btn_mk img {
+    width:200px;
+    height: auto;
+    opacity: 0.8;
+
+    transition: all 0.5s cubic-bezier(0.65,0.05,0.36,1);
+}
+
+a#btn_mk:hover img {
+    transform: scale(.9);
+    opacity: 1;
+}
+
+
+a#btn_harley {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 36px;
+    color: #000000;
+    text-decoration: none;
+    line-height: 1.1;
+
+    position: relative;
+}
+
+a#btn_harley div.tile-harley {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    top: 54%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    border: 4px solid #e46714;
+    border-radius: 10px;
+    z-index: -1;
+    transition: all 0.4s cubic-bezier(0.65,0.05,0.36,1);
+}
+
+a#btn_harley:hover div.tile-harley {
+    border-radius: 50px;
+}
+
+a#btn_harley span{
+    display: block;
+    transition: all 0.4s cubic-bezier(0.65,0.05,0.36,1);
+}
+
+a#btn_harley:hover span {
+    transform: scale(0.9);
+}
+
+a#btn_lyft img {
+    width: 130px;
+    height: auto;
+
+    transition: all 0.5s cubic-bezier(0.65,0.05,0.36,1);
+}
+
+a#btn_lyft div.circle-lyft {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    opacity: 0;
+    top: 48%;
+    left:50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    border: 3px solid #eb1478;
+    border-radius: 100%;
+    box-shadow: 0px 0px 12px 0px rgba(255, 0, 100, 0.75);
+    transition: all 0.5s cubic-bezier(0.65,0.05,0.36,1);
+}
+
+a#btn_lyft:hover div.circle-lyft {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+a#btn_lyft:hover img {
+    transform: scale(0.9);
+}
+
+a#btn_navy {
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 36px;
+    color: #ffffff;
+    background-color: red;
+    border-radius: 80%;
+    padding: 40px 2px;
+    border: 3px solid rgba(255, 0, 0, 0);
+    transition: all 0.5s cubic-bezier(0.65,0.05,0.36,1);
+}
+
+
+
+a#btn_navy:hover {
+    background-color: white;
+    color: red;
+    border: 3px solid red;
+}
+
+a#btn_flight {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    size: 30px;
+    font-weight: bold;
+}
+
+a#btn_flight img {
+    width: 100px;
+    height: auto;
+    transform: rotate(180deg);
+    opacity: 0.2;
+    transition: all 0.5s 0.2s cubic-bezier(0.65,0.05,0.36,1);
+}
+
+a#btn_flight span {
+    display: block;
+    font-size: 30px;
+    transition: all 0.5s  cubic-bezier(0.65,0.05,0.36,1);
+}
+
+a#btn_flight:hover span {
+    transform: scale(0.8) translateY(40%);
+}
+
+a#btn_flight:hover  img {
+    transform: rotate(0) scale(1.4);
+    opacity: 1;
+    
+}
+
+a#btn_apple {
+   position: relative; 
+}
+
+a#btn_apple img {
+    width: 120px;
+    height: auto;
+
+    transition: all 0.5s cubic-bezier(0.65,0.05,0.36,1);
+}
+
+a#btn_apple div.circle-apple {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    opacity: 0;
+    top: 50%;
+    left:50.5%;
+    transform: translate(-50%, -50%) scale(0.5);
+    border-radius: 100%;
+    box-shadow: 0px 0px 25px 0px #3160fc;
+    transition: all 0.5s cubic-bezier(0.65,0.05,0.36,1);
+}
+
+a#btn_apple:hover div.circle-apple {
+    transform: translate(-50%, -50%) scale(1);
+    opacity:1;
+}
+
+a#btn_apple:hover img {
+    transform: scale(0.7);
+    opacity: 0.5;
+}
+
+
+a#btn_dime img {
+    width: 100px;
+    height:auto;
+    transition: all 0.5s cubic-bezier(0.65,0.05,0.36,1);
+}
+
+a#btn_dime {
+    text-decoration: none;
+    color: #6d1313;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    line-height: 1.1;
+    font-size: 36px;
+}
+
+a#btn_dime span {
+    margin-top:10px;
+    display: block;
+    z-index:-1;
+    transition: all 0.5s cubic-bezier(0.65,0.05,0.36,1);
+}
+
+a#btn_dime:hover  span {
+    transform: translateY(-40%);
+}
+
+
+a#btn_dime:hover img {
+    transform: translate(-80%, 30%) scale(0.4) rotate(-12deg);
+    opacity: 0.3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
