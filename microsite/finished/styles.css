@@ -1,0 +1,674 @@
+body {
+    font-family: 'Domine', serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6; 
+    margin: 0;
+}
+
+body.home {
+    background-color: #000;
+    color: #FDFADB;
+}
+
+body.pages {
+    background-color: #FBF3AC;
+    color: #000;
+}
+
+body.pages a {
+    color: #000;
+}
+
+
+header img {
+   width: 80vw; 
+}
+
+nav {
+    position: fixed;
+    right: 0;
+   z-index: 900;
+}
+
+nav a.menu-flower img {
+    padding: 1.6vw 1vw 1vw 0;
+
+    transition: 0.9s transform cubic-bezier(0.68,-0.55,0.27,1.55);;
+}
+
+nav a.menu-flower img:hover {
+    transform: translate(-20px, 5px) rotate(180deg);
+    
+}
+
+nav a {
+    display: block;
+    text-align: right;
+    font-family: 'rockwell-nova-condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-decoration: none;
+    color: #FBF3AC;
+    margin-bottom: 12px;
+}
+
+
+nav a.selected {
+    text-decoration: underline #ADA23D;
+}
+
+
+nav div.pages {
+    padding-right: 30px;
+}
+
+
+nav div.pages div.rule {
+    position: absolute;
+    height: 100vh;
+    width: 2px;
+    background-color: #ADA23D;
+    right: 50px;
+    margin-top: 25px;
+}
+
+main {
+    padding: 0 8vw 60px 8vw;
+    
+}
+
+
+h1, h2, h3 {
+    font-family: 'rockwell-nova-condensed', sans-serif;
+}
+
+main h2 {
+    color: #FBF3AC;
+    margin-top: -20px;
+    text-transform: uppercase;
+    font-size: 4vw;
+    letter-spacing: 0.1rem;
+}
+
+main div.body {
+    display:flex;
+    justify-content: space-between;
+    max-width: 860px;
+    margin-bottom: 60px;
+}
+
+/* cast */
+
+main div.characters {
+    margin-top:90px;
+    display:block;
+    max-width:700px;
+}
+
+
+main div.characters div.character {
+    display:flex;
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 60px;
+    box-sizing: border-box;
+}
+
+main div.characters div.character img {
+    width:260px;
+    opacity: 0.9;
+}
+
+main div.characters div.character div.caption h3 {
+    font-size: 28px;
+    line-height: 1.2;
+    margin-top:0;
+}
+
+main div.characters div.character div.caption h3 i {
+    color: #E03F2F;
+}
+
+main div.characters div.character div.caption {
+    padding-left: 26px;
+    padding-right:40px;
+}
+
+main div.characters div.character div.caption p {
+    font-size: 18px;
+}
+
+
+
+
+/* main continued */
+
+main div.body div.movie-description {
+ max-width: 630px;
+}
+
+main div.body div.movie-info{
+    margin-top:4px;
+}
+
+main div.body div.movie-info h3:first-child {
+    padding-top:0;
+}
+
+main div.body div.movie-info h3 {
+    line-height: 0.3;
+    
+    font-size: 24px;
+    font-size: 1;
+    color: #FBF3AC;
+
+    padding-top: 20px;
+
+}
+
+main div.body div.movie-info p {
+    line-height: 0.8;
+}
+
+main div.big-flower {
+    display:none;
+}
+
+
+
+/* pages */
+
+body.pages main {
+    padding-top: 90px;
+    
+}
+
+body.pages main div.body b {
+    color: #E03F2F;
+}
+
+body.pages main div.body div.movie-info h3 {
+    color: #000;
+    line-height: 1.2;
+    margin: 0;
+}
+
+body.pages main div.body div.movie-info p {
+    line-height: 1.3;
+}
+
+body.pages main div.body div.movie-info {
+    margin-left: 50px;
+}
+
+
+body.pages main div.body img {
+    width: 220px;
+    opacity: 0.9;
+}
+
+
+
+body.pages main div.body img.family {
+    width: 700px;
+}
+
+body.pages main div.body img.lee {
+    margin-top: 80px;
+}
+
+h1 {
+    font-size: 6vw;
+    line-height: 1.1;
+}
+
+h1 i.life {
+    color: #E65A9A;
+}
+
+h1 i.family {
+    color: #4EA2C8;
+}
+
+h1 i.love {
+    color: #E03F2F;
+}
+
+h4 {
+    font-family: rockwell-nova, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 26px;
+    margin: 20px 0 0 0;
+    position: relative;
+}
+
+h4.family {
+   
+    border-bottom: 2px solid #000 ;
+    padding-bottom:20px;
+    width: 920px;
+}
+
+h4 div.marker {
+    position: absolute;
+    background-color: #E03F2F;
+    width: 160px;
+    height: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -175px;
+}
+
+h4 div.story {
+    background-color: #4EA2C8;
+}
+
+h4 div.music {
+    background-color: #E8842F;
+}
+
+h4 div.cast {
+    background-color: #E65A9A;
+}
+
+h4 div.animate {
+    background-color: #E9A333;
+}
+
+body.pages main div.body h4 img.story {
+    position:absolute;
+    top: -670%;
+    right:0;
+    transform: rotate(20deg);
+    width: 240px;
+    opacity:0.6;
+    z-index: -2;
+}
+
+main.plot div.body div.movie-info p{
+   line-height: 1.35;
+   position: relative;
+}
+
+main.plot div.body div.movie-info p img{
+    position: absolute;
+    right:-10px;
+    z-index: 2;
+    width: 80px;
+    opacity: 0.7;
+
+    transition: all 0.6s cubic-bezier(0.65,0.05,0.36,1);
+}
+
+main.plot div.body div.movie-info p a:hover img {
+    transform: scale(1.1) rotate(-140deg);
+    opacity: 1;
+}
+
+main.production div.body {
+    margin-bottom: 100px;
+}
+
+a {
+    text-decoration: none;
+} 
+
+body.pages main div.body div.movie-info h3.music {
+    position: relative;
+    padding-top: 70px;
+    z-index: -1;
+    color: #E03F2F;
+}
+
+body.pages main div.body div.movie-info p.music {
+    margin-top:6px;
+}
+
+body.pages main div.body div.movie-info h3.songs {
+    padding-top:20px;
+}
+
+body.pages main div.body h3 img.music {
+    width: 100px;
+    position:absolute;
+    top:20px;
+    left:-40px;
+    opacity: 0.48;
+    z-index: -2;
+}
+
+body.pages main div.body div.movie-description {
+    position:relative;
+}
+
+body.pages main div.body h1.remember-me {
+    margin-left: -40px;
+    font-size:5vw;
+    position: relative;
+ }
+
+body.pages main div.body h1.remember-me img{
+     position:absolute;
+     left:-35px;
+     top:-50px;
+     width:140px;
+     z-index:-1;
+     opacity: 0.6;
+ }
+
+ body.pages main div.body div.movie-description a.play-remember-me {
+    position: absolute;
+    font-family: 'rockwell-nova-condensed', sans-serif;
+    font-size: 28px;
+    right: -200px;
+    bottom: -70px;
+}
+
+body.pages main div.body div.movie-description a.play-remember-me img {
+    width: 150px;
+    position:absolute;
+    left:50%;
+    top:0;
+    transform: translate(-50%, -80%);
+    opacity: 0.9;
+    transition: all 0.6s cubic-bezier(0.65,0.05,0.36,1); 
+
+}
+
+body.pages main div.body div.movie-description a.play-remember-me:hover img {
+    transform: translate(-50%, -80%) scale(1.2) rotate(-135deg);
+    opacity: 1;
+}
+
+/* nav-smaller-sizes */
+
+nav.mobile {
+    background-color: rgba(0, 0, 0, 0.87);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    right: 0;
+    top:0;
+    z-index: 800;
+    display:none;
+}
+
+
+nav.mobile div.pages {
+    transform: translateY(80%);
+}
+
+body.pages nav.mobile {
+    background-color: rgba(251, 243, 172, 0.87);
+}
+
+body.pages nav.mobile  a.close-button {
+    color: #000;
+}
+
+nav.mobile a.close-button {
+    font-family: 'Domine', serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FBF3AC;
+    text-transform: lowercase;
+    top:-150px;
+    left:40px;
+    position: absolute;
+}
+
+
+
+
+
+/* media queries */
+
+@media (min-width:1300px) {
+    
+    body.pages main div.body {
+        max-width: 970px;
+    }
+
+    body.pages main div.body img {
+        width: 240px;
+    }
+
+
+   
+}
+
+@media (max-width:1200px) {
+    main div.body {
+        display: block;
+    }
+
+    main div.body div.movie-info {
+        margin-top: 60px;
+    }
+    body.pages main div.body div.movie-info {
+        margin-left: 0;
+    }
+
+    body.pages main div.body img {
+        width: 400px;
+    }
+
+    main.plot div.body div.movie-info p {
+        max-width: 400px;
+    }
+
+    body.pages main div.body img.lee {
+        padding-top: 0px;
+    }
+
+
+    body.pages main.production div.body div.movie-info p {
+        margin-bottom: 64px;
+     }
+
+     body.pages main div.body div.movie-info p.music {
+        margin-bottom: 10px;
+    }
+ 
+     body.pages main.plot div.body div.movie-info img{
+         margin-bottom: 40px;
+     }
+
+   
+     body.pages main div.body div.movie-description a.play-remember-me {
+        font-size: 24px;
+        right: 15px;
+        bottom: -180px;
+     }
+
+     body.pages main div.body h4 img.story {
+        display: none;
+     }
+
+  
+    
+    
+    main div.characters div.character div.caption h3 {
+        margin-top:0;
+        margin-bottom: 0;
+    }
+    
+    
+
+    h4.family {
+        width: 100%;
+    }
+   
+}
+
+@media (max-width:1060px) {
+
+ 
+
+    nav div.pages, nav div.rule{
+        display: none;
+    }
+
+    nav.mobile div.pages, nav div.rule{
+        display: block;
+    }
+
+   
+    nav.mobile.open {
+        display:block;
+    }
+
+    main div.big-flower {
+        display:block;   
+        position: absolute;
+        right:5vw;
+        bottom: -80vw;
+        z-index:-1;
+        opacity: 0.3;
+
+    }
+
+    main div.big-flower img {
+        width: 50vw;
+        height: 50vw;
+       
+       
+    }
+
+    h1 {
+        font-size: 8vw;
+    }
+
+    body.pages main div.body h1.remember-me {
+        margin-left: -36px;
+        font-size:6vw;
+         
+     }
+
+    
+
+
+    
+}
+
+@media (max-width:800px) {
+    main h2 { 
+        font-size: 10vw;
+        line-height: 1.2;
+    }
+
+    main div.big-flower {
+        bottom: -120vw;
+    }
+
+    h1 {
+        font-size: 10vw;
+    }
+
+    body.pages main div.body img {
+        width: 100%;
+    }
+
+
+    main.plot div.body div.movie-info p {
+        max-width: 100%;
+    }
+
+    main.plot div.body div.movie-info p img {
+        width: 100px;
+    }
+
+    body.pages main div.body img.family {
+        width: 100%;
+    }
+
+   
+    
+    h4 {
+    font-size: 24px;
+    margin-top: 40px;
+    }
+
+    h4 div.marker {
+        height: 1.1rem;
+        left: -168px;
+    }
+
+    main div.body div.movie-info h3 {
+        font-size: 26px;
+    }
+
+    body.pages main div.body h1.remember-me {
+        margin-left: -30px;
+        font-size:8vw;
+         
+     }
+
+
+    main div.characters div.character {
+        display: block;
+    }
+
+    main div.characters div.character div.caption h3 {
+        margin-top:15px;
+        margin-bottom: 0;
+    }
+    
+    main div.characters div.character div.caption {
+        padding-left: 0;
+        padding-right:150px;
+    }
+
+    nav.mobile {
+        width: 100vw;
+    }
+    
+
+    
+}
+
+@media (max-width:650px) {
+    main div.big-flower {
+        bottom: -160vw;
+    }
+
+    body.pages main div.body h1.remember-me{
+        margin-left: -26px;
+        font-size:10vw;
+     }
+
+     body.pages main div.body img.family {
+        margin-top:10px;
+    }
+
+    
+   
+}
+
+@media (max-width: 580px) {
+    main div.characters div.character img {
+        width:100%;
+    }
+
+    h1 {
+        font-size: 14vw;
+    }
+
+    h1 br.plot-break {
+        display: none;
+    }
+
+    main div.characters div.character div.caption {
+        padding-left: 0;
+        padding-right:0px;
+    }
+
+    main div.characters div.character div.caption p {
+        font-size: 17px;
+    }
+}
+
+
